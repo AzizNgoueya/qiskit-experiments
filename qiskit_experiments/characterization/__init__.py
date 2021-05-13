@@ -10,9 +10,6 @@
 # copyright notice, and modified files need to carry a notice indicating
 # that they have been altered from the originals.
 
-"""Randomized Benchmarking Experiment Classes."""
+"""Qiskit Experiments Characterziation."""
 
-from .rb_experiment import RBExperiment
-from .interleaved_rb_experiment import InterleavedRBExperiment
-from .rb_analysis import RBAnalysis
-from .interleaved_rb_analysis import InterleavedRBAnalysis
+from .t1_experiment import T1Experiment, T1Analysis
