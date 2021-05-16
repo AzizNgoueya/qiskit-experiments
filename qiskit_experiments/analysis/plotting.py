@@ -172,7 +172,7 @@ def plot_errorbar(
         ax: Optional, a matplotlib axes to add the plot to.
         labelsize: label size for plot
         grid: Show grid on plot.
-        **kwargs: Additional options for matplotlib.pyplot.scatter
+        **kwargs: Additional options for matplotlib.pyplot.errorbar
 
     Returns:
         AxesSubPlot: the matplotlib axes containing the plot.
