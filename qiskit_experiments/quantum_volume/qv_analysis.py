@@ -201,9 +201,11 @@ class QVAnalysis(BaseAnalysis):
 
         z_value = self._calc_z_value(mean_hop, sigma_hop)
         confidence_level = self._calc_confidence_level(z_value)
+        print(success)
         if mean_hop > 2 / 3 and confidence_level > confidence_level_threshold:
             quantum_volume = 2 ** depth
             success = True
+        print(success)
 
         result = {
             "quantum volume": quantum_volume,

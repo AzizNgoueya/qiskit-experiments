@@ -6,6 +6,7 @@ from qiskit_experiments.base_experiment import BaseExperiment
 
 from qiskit.circuit import QuantumCircuit
 from .discriminator_analysis import DiscriminatorAnalysis
+from .mixed_discriminator_analysis import MixedDiscriminatorAnalysis
 from typing import List, Optional, Union, Iterable
 
 
@@ -17,7 +18,7 @@ class DiscriminatorExperiment(BaseExperiment):
 
     def __init__(
         self,
-        qubits: Union[int, Iterable[int]],
+        qubits: Union[int, Iterable[int]]
     ):
         """Standard discriminator experiment
 
@@ -25,7 +26,6 @@ class DiscriminatorExperiment(BaseExperiment):
             qubits: the number of qubits or list of
                     physical qubits for the experiment.
         """
-
         super().__init__(qubits)
 
     def circuits(self, backend: Optional["Backend"] = None) -> List[QuantumCircuit]:

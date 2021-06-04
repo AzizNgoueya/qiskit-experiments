@@ -12,4 +12,6 @@
 
 """Quantum Volume Experiment Classes."""
 from .qv_experiment import QVExperiment
+from .mixed_qv_experiments import MixedQVExperiment
 from .qv_analysis import QVAnalysis
+from .mixed_qv_analysis import MixedQVanalysis
